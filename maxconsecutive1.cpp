@@ -10,10 +10,11 @@ public:
                 m++;
             }
             else{
+                con=max(con,m);
                 m=0;
-            }
-            con=max(con,m);
+            }   
         }
+        con=max(con,m);
         return con;
         
     }
